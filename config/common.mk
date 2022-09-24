@@ -97,6 +97,10 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
+ 
+ # DotOS Maintainer
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.dot.maintainer=$(DOT_MAINTAINER)
 
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
